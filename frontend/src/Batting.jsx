@@ -23,7 +23,7 @@ const Batting = () => {
 
   const fetchBatting = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/batting/getbattingstats");
+      const res = await axios.get("https://cricketstats-3ax6.onrender.com/api/batting/getbattingstats");
       setBattingData(res.data);
     } catch (e) {
       console.log(e);
@@ -32,7 +32,7 @@ const Batting = () => {
 
   const fetchMatches = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/batting/matches");
+      const res = await axios.get("https://cricketstats-3ax6.onrender.com/api/batting/matches");
       setMatches(res.data);
     } catch (e) {
       console.log(e);
@@ -41,7 +41,7 @@ const Batting = () => {
 
   const handleAddMatch = async () => {
     try {
-      await axios.post("http://localhost:5000/api/batting/addbattingrecord", newMatch);
+      await axios.post("https://cricketstats-3ax6.onrender.com/api/batting/addbattingrecord", newMatch);
       alert("Match added!");
       await fetchBatting();
       await fetchMatches();
