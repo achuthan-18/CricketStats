@@ -8,7 +8,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-    origin:'https://achuthancricketstats.onrender.com'
+    origin:'https://achuthancricketstats.onrender.com/'
 }));
 app.use(express.json());
 
