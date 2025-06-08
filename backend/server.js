@@ -7,9 +7,7 @@ const bowlingRoute = require('./routes/bowlingRoutes');
 const cors = require('cors');
 
 const app = express();
-app.use(cors({
-    origin: "https://achuthancricketstats.onrender.com"
-}));
+app.use(cors());
 
 app.use(express.json());
 
