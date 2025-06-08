@@ -26,7 +26,7 @@ const Bowling = () => {
 
   const fetchBowling = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/bowling/getbowlingstats");
+      const res = await axios.get("https://cricketstats-3ax6.onrender.com/api/bowling/getbowlingstats");
       console.log(res.data);
       setBowlingData(res.data);
     } catch (e) {
@@ -36,7 +36,7 @@ const Bowling = () => {
 
   const fetchMatches = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/bowling/matches");
+      const res = await axios.get("https://cricketstats-3ax6.onrender.com/api/bowling/matches");
       setMatches(res.data);
     } catch (e) {
       console.log(e);
@@ -45,7 +45,7 @@ const Bowling = () => {
 
   const handleAddMatch = async () => {
     try {
-      await axios.post("http://localhost:5000/api/bowling/addbowling", newMatch);
+      await axios.post("https://cricketstats-3ax6.onrender.com/api/bowling/addbowling", newMatch);
       alert("Match added!");
       await fetchMatches();
       await fetchBowling();
