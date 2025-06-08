@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: block;
+  position: relative;
+  height: 250px; /* space for avatar */
+}
+
+#avatarimage {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;     /* adjust this as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#tabButtons {
+  position: absolute;
+  top: 420px;     
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+#battingbutton,
+#bowlingbutton {
+  padding: 20px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 3px solid transparent;
+}
+
+.active-tab {
+  border-bottom: 3px solid black; 
+}
+
+#submaincontainer {
+  margin-top: 400px; 
+  text-align: center;
+}
+
+#separate {
+  font-size: 50px;
+}

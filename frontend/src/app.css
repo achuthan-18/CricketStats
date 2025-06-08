@@ -1,0 +1,39 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: block;
+}
+
+#avatarimage{
+    width: 25%;
+    height: 46%;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#tabButtons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+#battingbutton , #bowlingbutton {
+  padding: 20px 50px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+#separate{
+    font-size: 50px;
+} */
+
